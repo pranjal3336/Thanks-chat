@@ -67,19 +67,39 @@ export default function Home() {
           <div className="bg-white h-1 opacity-10 "></div>
 
           <div className="text-white container mx-auto pb-32 pt-14 flex flex-col justify-center items-center px-4">
-            <h2 className="text-3xl font-bold text-center mb-14">Learn more about us</h2>
-            <div className="w-full max-w-4xl">
-              <div className="aspect-w-16 aspect-h-9">
-                <iframe
-                  className="w-full h-full"
-                  src="https://www.youtube.com/embed/qaTB_u1THVs?si=mCpcEpb4arO6xG85"
-                  title="YouTube video player"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
-                />
-              </div>
-            </div>
+            <h2 className="text-3xl font-bold text-center mb-14">About ThanksChat</h2>
+            <div className="w-full max-w-5xl mt-8">
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    
+    {/* Card 1 */}
+    <div className="bg-gray-800/50 p-6 rounded-xl border border-gray-700 hover:border-indigo-500 transition-all duration-300">
+      <div className="text-indigo-400 text-3xl mb-4">🚀</div>
+      <h3 className="text-xl font-bold text-white mb-2">Real-Time Messaging</h3>
+      <p className="text-gray-400 text-sm">
+        Connect instantly with ultra-fast message delivery. Experience seamless communication without any lag or delays.
+      </p>
+    </div>
+
+    {/* Card 2 */}
+    <div className="bg-gray-800/50 p-6 rounded-xl border border-gray-700 hover:border-green-500 transition-all duration-300">
+      <div className="text-green-400 text-3xl mb-4">🔒</div>
+      <h3 className="text-xl font-bold text-white mb-2">Secure & Private</h3>
+      <p className="text-gray-400 text-sm">
+        Your privacy is our priority. Built with modern security protocols to ensure your conversations remain confidential.
+      </p>
+    </div>
+
+    {/* Card 3 */}
+    <div className="bg-gray-800/50 p-6 rounded-xl border border-gray-700 hover:border-purple-500 transition-all duration-300">
+      <div className="text-purple-400 text-3xl mb-4">✨</div>
+      <h3 className="text-xl font-bold text-white mb-2">Intuitive UI</h3>
+      <p className="text-gray-400 text-sm">
+        A clean, clutter-free interface designed for the best user experience. Easy to navigate and pleasant to use.
+      </p>
+    </div>
+
+  </div>
+</div>
           </div>
 
         </>
