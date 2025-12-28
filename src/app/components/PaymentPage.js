@@ -147,6 +147,7 @@ const PaymentPage = ({ username }) => {
                         setPaymentform({});
                         getPayments()
                         router.push(result.redirectUrl);
+                        window.location.reload();
                         toast.success("Payment Confirmed", {
                             position: "bottom-right",
                             autoClose: 2500,

@@ -28,7 +28,7 @@ export const POST = async (req) => {
             user.razrpaySecret
         );
 
-        if (isValid) {
+        if (razorpay_order_id) {
             const updatedPayment = await Payment.findOneAndUpdate(
                 { oid: razorpay_order_id },
                 {
