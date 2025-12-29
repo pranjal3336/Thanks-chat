@@ -130,7 +130,7 @@ const PaymentPage = ({ username }) => {
                 image: `${process.env.NEXT_PUBLIC_URL}/icons/tea.gif`,
                 order_id: orderId,
                 handler: async function (response) {
-                    const paymentResponse = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/razorpay`, {
+                    const paymentResponse = await fetch(`/api/razorpay`, {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json'
